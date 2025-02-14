@@ -1,0 +1,144 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Notícia 1",
+      "description": "Descrição da notícia 1.",
+      "date": "2024-07-17",
+      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+    },
+    {
+      "id": 2,
+      "title": "Notícia 2",
+      "description": "Descrição da notícia 2.",
+      "date": "2024-07-16",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+    },
+    {
+      "id": 3,
+      "title": "Notícia 3",
+      "description": "Descrição da notícia 3.",
+      "date": "2024-07-15",
+      "imageUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+    },
+    {
+      "id": 4,
+      "title": "Notícia 4",
+      "description": "Descrição da notícia 4.",
+      "date": "2024-07-14",
+      "imageUrl": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+    },
+    {
+      "id": 5,
+      "title": "Notícia 5",
+      "description": "Descrição da notícia 5.",
+      "date": "2024-07-13",
+      "imageUrl": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546"
+    },
+    {
+      "id": 6,
+      "title": "Notícia 6",
+      "description": "Descrição da notícia 6.",
+      "date": "2024-07-12",
+      "imageUrl": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308"
+    },
+    {
+      "id": 7,
+      "title": "Notícia 7",
+      "description": "Descrição da notícia 7.",
+      "date": "2024-07-11",
+      "imageUrl": "https://images.unsplash.com/photo-1541698444083-023c97d3f4b6"
+    },
+    {
+      "id": 8,
+      "title": "Notícia 8",
+      "description": "Descrição da notícia 8.",
+      "date": "2024-07-10",
+      "imageUrl": "https://images.unsplash.com/photo-1484627147104-f5197bcd6651"
+    },
+    {
+      "id": 9,
+      "title": "Notícia 9",
+      "description": "Descrição da notícia 9.",
+      "date": "2024-07-09",
+      "imageUrl": "https://images.unsplash.com/photo-1521747116042-5a810fda9664"
+    },
+    {
+      "id": 10,
+      "title": "Notícia 10",
+      "description": "Descrição da notícia 10.",
+      "date": "2024-07-08",
+      "imageUrl": "https://images.unsplash.com/photo-1485115905815-74a5c9fda2f5"
+    },
+    {
+      "id": 11,
+      "title": "Notícia 11",
+      "description": "Descrição da notícia 11.",
+      "date": "2024-07-07",
+      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+    },
+    {
+      "id": 12,
+      "title": "Notícia 12",
+      "description": "Descrição da notícia 12.",
+      "date": "2024-07-06",
+      "imageUrl": "https://images.unsplash.com/photo-1516707570268-8c5e2b5a10a5"
+    },
+    {
+      "id": 13,
+      "title": "Notícia 13",
+      "description": "Descrição da notícia 13.",
+      "date": "2024-07-05",
+      "imageUrl": "https://images.unsplash.com/photo-1528744598421-b7d5d4f0b7a3"
+    },
+    {
+      "id": 14,
+      "title": "Notícia 14",
+      "description": "Descrição da notícia 14.",
+      "date": "2024-07-04",
+      "imageUrl": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91"
+    },
+    {
+      "id": 15,
+      "title": "Notícia 15",
+      "description": "Descrição da notícia 15.",
+      "date": "2024-07-03",
+      "imageUrl": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+    },
+    {
+      "id": 16,
+      "title": "Notícia 16",
+      "description": "Descrição da notícia 16.",
+      "date": "2024-07-02",
+      "imageUrl": "https://images.unsplash.com/photo-1533612608997-212b06408c1e"
+    },
+    {
+      "id": 17,
+      "title": "Notícia 17",
+      "description": "Descrição da notícia 17.",
+      "date": "2024-07-01",
+      "imageUrl": "https://images.unsplash.com/photo-1494959764136-6be9eb3c261e"
+    },
+    {
+      "id": 18,
+      "title": "Notícia 18",
+      "description": "Descrição da notícia 18.",
+      "date": "2024-06-30",
+      "imageUrl": "https://images.unsplash.com/photo-1504595403659-9088ce801e29"
+    },
+    {
+      "id": 19,
+      "title": "Notícia 19",
+      "description": "Descrição da notícia 19.",
+      "date": "2024-06-29",
+      "imageUrl": "https://images.unsplash.com/photo-1533750354212-4b9f0c001ebe"
+    },
+    {
+      "id": 20,
+      "title": "Notícia 20",
+      "description": "Descrição da notícia 20.",
+      "date": "2024-06-28",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+    }
+  ]
+}

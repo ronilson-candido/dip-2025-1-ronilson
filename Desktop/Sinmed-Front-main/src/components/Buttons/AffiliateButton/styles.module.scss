@@ -1,0 +1,21 @@
+.affiliateButton {
+  width: 10rem;
+  height: 3rem;
+  background: rgba(20, 92, 42, 0.1);
+  color: var(--text-green);
+  border-radius: 10px;
+  border: 1px solid rgba(20, 92, 42, 0.3);
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+  &:hover {
+    color: rgba(28, 141, 114, 1);
+    background: rgba(104, 218, 190, 0.2);
+  }
+}

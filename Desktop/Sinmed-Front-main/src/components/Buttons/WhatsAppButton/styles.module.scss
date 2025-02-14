@@ -1,0 +1,25 @@
+.whatsAppButton {
+  width: 13.125rem;
+  height: 3.75rem;
+  border: none;
+  border-radius: 40px;
+  background: rgba(99, 234, 113, 0.22);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  transition: all ease-out 0.3s;
+
+  b {
+    color: var(--text-green);
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    background: #145c2a38;
+  }
+}

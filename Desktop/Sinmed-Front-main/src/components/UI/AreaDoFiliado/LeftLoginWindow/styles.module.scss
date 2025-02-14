@@ -1,0 +1,65 @@
+.leftWindowSide {
+  width: 685px;
+  height: 768px;
+  padding-top: 2rem;
+  flex-shrink: 0;
+  background-image: url(/images/medic-background.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 220px 220px 20px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    h1 {
+      line-height: 150%;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-blue);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 812px) {
+  .leftWindowSide {
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    background-image: url(/images/medic-background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 50px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .leftWindowSide > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .leftWindowSide > div h1 {
+    line-height: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-blue);
+    text-align: center;
+  }
+
+  .leftWindowSide > div img {
+    width: 80%;  /* Ajuste para não ocupar toda a tela em dispositivos móveis */
+    max-width: 392px; /* Tamanho máximo para evitar que a imagem fique muito grande */
+  }
+}

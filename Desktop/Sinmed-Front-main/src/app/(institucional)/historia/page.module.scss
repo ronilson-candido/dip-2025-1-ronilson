@@ -1,0 +1,326 @@
+.openingFrame {
+  width: 100%;
+  height: 35.5rem;
+  position: relative;
+  padding-top: 0.5rem;
+  background-image: url("/images/medic-background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+
+  > div {
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .openingFrameContent {
+    max-width: 1440px;
+    margin: auto;
+
+    h1 {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 2.75rem;
+      color: var(--text-green);
+
+      span {
+        text-shadow: 1px 1px 1px var(--text-green);
+        text-decoration-line: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 3px;
+      }
+    }
+  }
+}
+
+.descriptionContainer {
+  width: 100%;
+  height: 54rem;
+  color: #f3f3f3;
+  background: linear-gradient(90deg, #227859 0.14%, #1f944e 124.21%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  .descriptionContent {
+    position: relative;
+    max-width: 1440px;
+    padding: 2rem 8rem;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 3rem;
+      margin-top: 1rem;
+
+      span {
+        color: #dfffd4;
+      }
+    }
+
+    div:first-child {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > div:nth-child(2) {
+      margin-top: 2.5rem;
+    }
+
+    .infoCard {
+      max-width: 35rem;
+      height: 16.25rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      background: rgba(255, 255, 255, 0.07);
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 0.75rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 10px;
+          background: rgba(217, 217, 217, 0.35);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .imageWrapper {
+      > div:nth-child(1) {
+        z-index: 999;
+      }
+      > div:nth-child(2) {
+        transform: rotate(-8.071deg);
+        right: 13.5%;
+        bottom: 36%;
+      }
+    }
+
+    .imageContent {
+      position: absolute;
+      padding: 1rem 1rem 2rem 1rem;
+      bottom: 29%;
+      right: 30%;
+      width: 15rem;
+      height: 15rem;
+      background-color: rgba(18, 97, 68, 0.6);
+      border-radius: 1rem;
+      transform: rotate(10.086deg);
+
+      > div {
+        width: 100%;
+        height: 95%;
+        border-radius: 0.75rem;
+        background-color: gray;
+        overflow: hidden;
+      }
+    }
+    .bottomInfo {
+      margin: 0 auto;
+      margin-top: 4rem;
+      width: 65rem;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 2rem;
+
+      p {
+        font-size: 1.25rem;
+
+        &:nth-child(2) {
+          font-weight: bolder;
+          font-size: 1.4rem;
+        }
+      }
+
+      span {
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+.detailsContainer {
+  width: 100%;
+  height: 37rem;
+  padding-top: 2rem;
+  background: linear-gradient(180deg, #f0fff4 0%, #f3f1f1 100%);
+
+  .detailsContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+
+    h2 {
+      color: var(--text-green);
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--text-green);
+    }
+
+    > div {
+      text-align: center;
+    }
+
+    div:nth-child(1) {
+      width: 400px;
+      height: 250px;
+      background: rgba(73, 236, 122, 0.2);
+      padding: 3rem 2.5rem;
+      border-radius: 100px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .infoWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 16rem;
+
+      > div {
+        height: 200px;
+        background: rgba(73, 236, 122, 0.1);
+        padding: 2rem 2.5rem;
+        border-radius: 100px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+
+  .openingFrame {
+    height: 25rem; 
+  }
+
+  .openingFrameContent h1 {
+    font-size: 2rem;
+    bottom: 1rem; 
+  }
+
+  .descriptionContainer {
+    height: auto;
+    padding: 1rem;
+
+    .descriptionContent {
+      padding: 1rem;
+
+      h2 {
+        font-size: 2rem; 
+      }
+
+      .infoCard {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.07);
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        h3, p {
+          white-space: normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .imageWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imageContent {
+        position: relative;
+        width: 12rem;
+        height: 12rem;
+        bottom: 0;
+        right: 0;
+        transform: none;
+      }
+
+      .bottomInfo {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+
+  .detailsContainer {
+    height: auto;
+    padding: 1rem;
+
+    .detailsContent {
+      width: 100%;
+      padding: 0 1rem;
+
+      .infoWrapper {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .infoWrapper div {
+        width: 100%;
+        padding: 1.5rem;
+      }
+    }
+  }
+}

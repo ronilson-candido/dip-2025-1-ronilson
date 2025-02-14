@@ -1,0 +1,324 @@
+.containerWrapper {
+  width: 100%;
+  height: 55rem;
+  padding-top: 0.5rem;
+  background: var(--dark-gradient);
+
+  .contentWrapper {
+    padding-top: 5.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.infoGrid {
+  color: white;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  max-width: 26.5rem;
+  gap: 2.5rem;
+
+  > div {
+    width: 12.25rem;
+    height: 230px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    b {
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 0.75rem;
+
+      span {
+        font-weight: 500;
+      }
+    }
+    .spanWrapper {
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.contactContainer {
+  width: 37rem;
+  height: 38rem;
+  background-color: #89d7e4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.formContainer {
+  width: 400px;
+  background: linear-gradient(#374151, #374151) padding-box,
+    linear-gradient(145deg, transparent 35%, #89d7e4, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+
+  button:active {
+    scale: 0.95;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-family: inherit;
+      background-color: transparent;
+      border: 1px solid #777676;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #89d7e4;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      resize: none;
+      color: #fff;
+      height: 96px;
+      border: 1px solid #777676;
+      background-color: transparent;
+      font-family: inherit;
+
+      &:focus {
+        outline: none;
+        border-color: #89d7e4;
+      }
+    }
+  }
+  .formSubmitBtn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #89d7e4;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #89d7e4;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #89d7e4;
+
+    &:hover {
+      color: white;
+      box-shadow: inset 0 -100px 0 0 #89d7e4;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (max-width: 768px) {
+  .containerWrapper {
+    height: auto;
+    padding-top: 1rem;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+  }
+
+  .infoGrid {
+    grid-template: repeat(2, 1fr) / 1fr;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 0 1rem;
+
+    > div {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      padding-top: 1rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    b {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .spanWrapper {
+      gap: 5px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .formContainer {
+    width: 90%;
+    padding: 24px 16px;
+    font-size: 14px;
+    background: linear-gradient(#374151, #374151) padding-box,
+      linear-gradient(145deg, transparent 35%, #89d7e4, #40c9ff) border-box;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    animation: gradient 5s ease infinite;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+      color: white;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-family: inherit;
+      background-color: transparent;
+      border: 1px solid #777676;
+    }
+
+    textarea {
+      height: auto;
+    }
+  }
+
+  .formSubmitBtn {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoGrid {
+    grid-template: repeat(2, 1fr) / 1fr;
+    gap: 1rem;
+
+    > div {
+      width: 100%;
+      padding-top: 1rem;
+    }
+
+    .spanWrapper {
+      font-size: 0.75rem;
+    }
+  }
+
+  .formContainer {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .formSubmitBtn {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

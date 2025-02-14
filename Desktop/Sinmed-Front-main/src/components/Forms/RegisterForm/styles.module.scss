@@ -1,0 +1,272 @@
+.registerArea {
+  width: 25rem;
+  color: var(--text-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 6rem;
+  justify-content: center;
+  gap: 0.25rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .separator {
+    width: 70%;
+    height: 1px;
+    background-color: #226c5f44;
+  }
+
+  .smallBox {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .smallGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+  }
+
+  p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+.nextButton {
+  color: var(--text-blue);
+  font-weight: 600;
+  font-size: 14px;
+  width: 190px;
+  height: 44px;
+  padding: 3px 0px;
+  position: absolute;
+  right: 53px;
+  bottom: 10%;
+  border-radius: 15px;
+  border: 1px solid #2e8666;
+  background: rgba(42, 186, 134, 0.4);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 1px solid #2e8666;
+
+    background: var(--text-blue);
+    color: rgba(255, 255, 255, 0.753);
+  }
+}
+
+.prevButton {
+  color: #2e866b;
+  font-weight: 600;
+  font-size: 14px;
+  width: 190px;
+  height: 44px;
+  padding: 3px 0px;
+  position: absolute;
+  right: 260px;
+  bottom: 10%;
+  border-radius: 15px;
+  border: 1px solid #2e866b;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 1px solid #2e866b;
+
+    background: rgba(196, 226, 212, 0.747);
+    color: #2e8666;
+  }
+}
+
+.insertArea {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: 351px;
+  height: 84px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(25, 140, 106, 0.1);
+
+  .secondButton {
+    margin-left: 1.25rem;
+  }
+  div {
+    display: flex;
+    position: relative;
+    gap: 4rem;
+    width: 250px;
+  }
+
+  .firstLabel {
+    margin-left: 1.25rem;
+  }
+
+  .firstSpan {
+    position: absolute;
+    right: -25px;
+    top: 2px;
+  }
+
+  .secondSpan {
+    position: absolute;
+    right: -25px;
+    top: 2px;
+  }
+
+  button {
+    color: white;
+    border: none;
+    display: flex;
+    width: 102px;
+    height: 25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    border-radius: 10px;
+    background: #226c5f;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #20a088d8;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  .customFileUpload {
+    color: white;
+    border: none;
+    display: flex;
+    width: 102px;
+    height: 25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    border-radius: 10px;
+    background: #226c5f;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #20a088d8; // Cor ao passar o mouse
+    }
+  }
+}
+
+.finishButton {
+  color: var(--text-blue);
+  font-weight: 600;
+  font-size: 14px;
+  width: 190px;
+  height: 44px;
+  padding: 3px 0px;
+  position: absolute;
+  right: 53px;
+  bottom: 10%;
+  border-radius: 15px;
+  border: 1px solid #2e8666;
+  background: rgba(42, 186, 134, 0.4);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 1px solid #2e8666;
+
+    background: var(--text-blue);
+    color: rgba(255, 255, 255, 0.753);
+  }
+}
+@media (max-width: 768px) {
+  .registerArea {
+    width: 90%;
+    margin-top: 2rem;
+    margin-right: auto;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .registerArea input[type="text"],
+  .registerArea input[type="email"] {
+    margin-right: 110px;
+    width: 110%;
+    max-width: none;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .registerArea label {
+    font-size: 14px;
+  }
+
+  .registerArea h2 {
+    font-size: 1.5rem;
+  }
+
+  .registerArea .separator {
+    width: 100%;
+  }
+
+  .registerArea .smallGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
+  .nextButton,
+  .prevButton,
+  .finishButton {
+    width: 140px;
+    height: 36px;
+    margin-right: 40px;
+    font-size: 12px;
+    bottom: 2%;
+  }
+
+  .prevButton {
+    right: 160px;
+  }
+
+  .finishButton {
+    right: 10px;
+  }
+
+  /* Área de inserção */
+  .insertArea {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .insertArea div {
+    flex-direction: column; /* Reorganiza os itens verticalmente */
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .insertArea button {
+    width: 100%;
+  }
+
+  .insertArea .customFileUpload {
+    width: 100%;
+    font-size: 12px;
+  }
+}

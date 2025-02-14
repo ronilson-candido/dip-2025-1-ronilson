@@ -1,0 +1,259 @@
+.mainContainer {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  background: var(--bluish-gradient);
+
+  h1 {
+    color: var(--text-blue);
+    font-size: 2.6rem;
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 2rem 0;
+  }
+
+  .mainContent {
+    height: auto;
+    width: 90%; 
+    max-width: 1440px;
+    padding-top: 2rem;
+    margin: auto;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+    .memberWrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .primary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .secondary {
+      display: flex;
+      margin-top: 60px;
+      margin-right: 60px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .separator {
+      width: 90%;
+      height: 2px;
+      border-radius: 50px;
+      background: rgba(111, 103, 103, 0.1);
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+
+    .memberContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-size: 1.7rem;
+        text-decoration-line: underline;
+      }
+
+      p {
+        color: var(--text-blue);
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+
+    .directorMembersWrapper {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      .directorMembersContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        gap: 6px;
+
+        h3 {
+          font-size: 1.7rem;
+          text-decoration-line: underline;
+        }
+
+        p {
+          color: var(--text-blue);
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .fiscalSection {
+      margin-top: 3.5rem;
+
+      h2 {
+        text-align: center;
+        color: var(--text-blue);
+        font-size: 2.4rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--text-blue);
+      }
+
+      .fiscalWrapper {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 2rem;
+      }
+
+      .fiscalContent {
+        width: 44rem;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        background-color: #ebf9ed;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-of-type(4) {
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 0.5rem 1rem;
+    align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  }
+
+  .mainContent {
+    align-items: center;
+    width: 90%; 
+    max-width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    margin: 1rem auto; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+
+    .memberWrapper {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+ 
+    .primary, 
+    .secondary {
+      flex-direction: column; 
+      gap: 1.5rem;
+      margin: 1rem 0;
+      align-items: center; 
+      width: 100%; 
+    }
+
+    .separator {
+      width: 100%;
+      margin: 2rem 0;
+      align-items: center;
+    }
+
+    .memberContent {
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .directorMembersWrapper {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      gap: 1rem; 
+    
+      .directorMembersContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        width: 100%; 
+    
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem; 
+        }
+    
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .fiscalSection {
+      margin-top: 2rem;
+
+      h2 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      .fiscalWrapper {
+        gap: 1.5rem;
+
+        .fiscalContent {
+          width: 100%;
+          padding: 1rem;
+          border-radius: 10px;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.mainContainer {
+  width: 100%;
+  background: var(--bluish-gradient);
+}
+
+.mainContent {
+  max-width: 1440px;
+  margin: auto;
+  padding: 2.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerSection {
+  width: 79.5rem;
+  height: 35rem;
+  position: relative;
+  border: 1px solid rgba(111, 103, 103, 0.2);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 4.5rem;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--text-blue);
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: var(--text-gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  hr {
+    border: none;
+    border: 0.5px solid rgba(128, 128, 128, 0.288);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 2rem;
+    margin-left: -2rem;
+
+    div {
+      padding: 0 1rem;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 0.7rem;
+
+      transition: all ease-out 0.3s;
+      span {
+        color: var(--text-blue);
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      &:hover {
+        background: rgba(45, 165, 144, 0.15);
+      }
+    }
+  }
+
+  .btnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+      width: 13.75rem;
+      height: 2.25rem;
+      background-color: var(--text-blue);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.25rem;
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 0.5rem;
+
+      transition: all ease-out 0.3s;
+
+      &:hover {
+        background-color: #2da590;
+      }
+    }
+  }
+
+  .optionContainer {
+    padding: 3.5rem 0;
+    color: var(--text-blue);
+
+    display: flex;
+    gap: 3.5rem;
+
+    > div {
+      width: 33.5rem;
+      height: 11.25rem;
+      padding: 0.8rem;
+      text-align: center;
+      border-radius: 10px;
+      border: 3px solid var(--text-blue);
+
+      display: flex;
+      justify-content: center;
+
+      gap: 3rem;
+
+      transition: all ease-out 0.2s;
+
+      b {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 20px;
+      }
+
+      &:hover {
+        background: var(--text-blue);
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .optionWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 1rem; 
+  }
+
+  .registerSection {
+    width: 100%; 
+    height: auto; 
+    padding: 2rem 1rem; 
+
+    h1 {
+      font-size: 1.7rem; 
+      text-align: center; 
+    }
+
+    h2 {
+      font-size: 1.4rem; 
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .backBtn {
+      position: static; 
+      margin-left: 0;
+
+      div {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        gap: 0.5rem;
+        margin-bottom: 1rem; 
+      }
+    }
+
+    .optionContainer {
+      display: flex;
+      flex-direction: column; 
+      gap: 1.5rem; 
+      
+      > div {
+        width: 100%; 
+        padding: 1rem;
+        text-align: left;
+        border-radius: 10px;
+        border: 3px solid var(--text-blue);
+        box-sizing: border-box;
+        gap: 1rem; 
+
+        b {
+          font-size: 1.7rem; 
+        }
+
+        p {
+          font-size: 1.1rem; 
+          font-weight: 400;
+        }
+
+        input[type="checkbox"] {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-top: 10px;
+        }
+
+        &:hover {
+          background: var(--text-blue);
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .btnWrapper {
+      width: 100%;
+      margin-top: 2rem; 
+      
+      button {
+        width: 100%; 
+        font-size: 1.2rem;
+        padding: 1rem; 
+      }
+    }
+  }
+}

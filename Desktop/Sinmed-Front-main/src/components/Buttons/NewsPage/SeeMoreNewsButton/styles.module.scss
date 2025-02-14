@@ -1,0 +1,32 @@
+.btn {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-left: 30.5rem;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #66dd98 0%, #226c5f 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(29 139 116 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(29 139 116 / 30%),
+    inset 0px -0.01em 0px rgba(29, 139, 116, 0.5);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(29 139 116 / 40%),
+      0px 0.4em 0.7em -0.1em rgb(29 139 116 / 30%), inset 0px -0.1em 0px #185548;
+    transform: translateY(-0.1em);
+  }
+
+  &:active {
+    box-shadow: inset 0px 0.1em 0.6em #185548;
+    transform: translateY(0em);
+  }
+}

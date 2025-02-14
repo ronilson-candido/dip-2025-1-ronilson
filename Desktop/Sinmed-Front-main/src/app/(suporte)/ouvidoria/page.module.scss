@@ -1,0 +1,328 @@
+.mainContainer {
+  width: 100%;
+  height: 35.7rem;
+  padding-top: 0.5rem;
+  background: var(--bluish-gradient);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+
+  .mainContent {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 1rem;
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--text-blue);
+    }
+
+    h2 {
+      font-weight: 400;
+      color: var(--text-gray);
+    }
+
+    .cardWrapper {
+      padding: 2rem 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 3rem;
+
+      .card {
+        width: 15.6rem;
+        height: 17.6rem;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: all ease-out 0.3s;
+
+        &:nth-child(1) {
+          background: linear-gradient(0deg, #111827 0%, #4b5563 100%);
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            background: linear-gradient(0deg, #111827 0%, #6c7d95 100%);
+          }
+        }
+        &:nth-child(2) {
+          background: linear-gradient(
+            180deg,
+            rgba(16, 185, 124, 0.7) 0%,
+            rgba(18, 64, 53, 0.7) 100%
+          );
+
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            background: linear-gradient(
+              180deg,
+              rgba(35, 222, 155, 0.7) 0%,
+              rgba(7, 30, 24, 0.7) 100%
+            );
+          }
+        }
+        &:nth-child(3) {
+          background: linear-gradient(180deg, #8e2213 0%, #210b06 100%);
+
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            background: linear-gradient(180deg, #c03724 0%, #1d0904 100%);
+          }
+        }
+        &:nth-child(4) {
+          background: linear-gradient(180deg, #95c9e4 0%, #2c9ed1 94%);
+
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            background: linear-gradient(180deg, #78cbf6 0%, #1d7aa4 94%);
+          }
+        }
+
+        b {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.125rem;
+        }
+
+        &:hover {
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 7px 20px 0px #000;
+        }
+
+        .cardContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.8rem;
+
+          margin-top: -1.5rem;
+
+          > div {
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            padding: 0.2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cardAlign {
+              position: absolute;
+              margin-left: 20px;
+              left: 20;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.consultingContainer {
+  width: 100%;
+  height: 16.6rem;
+  background: rgba(111, 218, 179, 0.4);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+
+  .consultingContent {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 1.6rem;
+
+    h2 {
+      color: #2e8666;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .form {
+      padding-top: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 1rem;
+
+      .inputWrapper {
+        display: flex;
+        gap: 10px;
+
+        .fullInput {
+          display: inline-block;
+          padding: 6px 12px;
+          border-radius: 5px;
+          border: 1px solid #6f6767;
+          background-color: white;
+
+          input {
+            outline: none;
+            border: none;
+            display: block;
+            line-height: 1.2em;
+            font-size: 14pt;
+            margin-top: 10px;
+          }
+
+          label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-gray);
+          }
+        }
+      }
+
+      button {
+        width: 518px;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #2e8666;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        transition: all ease-out 0.3s;
+
+        &:hover {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          background: #229b70;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    height: auto;
+    padding-top: 1rem;
+    
+  }
+
+  .mainContent {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .cardWrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+
+    b {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .cardContent {
+      gap: 0.5rem;
+      margin-top: 0;
+      > div {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .consultingContainer {
+    height: auto;
+    padding: 2rem 1rem;
+
+    .consultingContent {
+      padding-top: 1rem;
+    }
+
+    .consultingTitle {
+      font-size: 1.4rem;
+    }
+
+    .consultingText {
+      font-size: 1rem;
+    }
+
+    .form {
+      gap: 1rem;
+
+      .inputWrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .fullInput {
+        width: 100%;
+        input {
+          font-size: 14px;
+        }
+
+        label {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 16px;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
